@@ -89,32 +89,36 @@ html, body, ul, li, button, input, textarea, h1, h2, h3, h4, h5, h6 {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
-  .section-slider__img {
-    width: 1146px;
-    height: 640px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center; }
-  .section-slider__buttons {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-  .section-slider__button {
-    width: 81px;
-    height: 61px;
-    background: url("../images/button-icon.svg");
-    color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FCC304;
-    border-radius: 0 50px 50px 0; }
-    .section-slider__button_right {
-      -webkit-transform: rotate(0deg) translate(-3px);
-              transform: rotate(0deg) translate(-3px); }
-    .section-slider__button_left {
-      -webkit-transform: rotate(180deg) translate(-2px);
-              transform: rotate(180deg) translate(-2px); }
+
+.slider__img {
+  position: relative;
+  width: 1146px;
+  height: 640px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center; }
+
+.slider__buttons {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.slider__button {
+  width: 81px;
+  height: 61px;
+  background: url("../images/button-icon.svg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FCC304;
+  border-radius: 0 50px 50px 0; }
+  .slider__button_right {
+    -webkit-transform: rotate(0deg) translate(-3px);
+            transform: rotate(0deg) translate(-3px); }
+  .slider__button_left {
+    -webkit-transform: rotate(180deg) translate(-2px);
+            transform: rotate(180deg) translate(-2px); }
 
 /*# sourceMappingURL=main.css.map */

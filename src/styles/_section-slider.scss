@@ -3,37 +3,4 @@
   top: 528px;
   left: 50%;
   transform: translate(-50%);
-
-  &__img {
-    width: 1146px;
-    height: 640px;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  &__buttons {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__button {
-    width: 81px;
-    height: 61px;
-    background: url('../images/button-icon.svg');
-    color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $complementary-color;
-    border-radius: 0 50px 50px 0;
-    // transform: translate(0 -1px);
-
-    &_right {
-      transform: rotate(0deg) translate(-3px);
-    }
-
-    &_left {
-      transform: rotate(180deg) translate(-2px);
-    }
-  }
 }
