@@ -1,14 +1,62 @@
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+html, body, ul, li, button, input, textarea, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  line-height: inherit;
+  list-style: none; }
 
 body {
-  background: #eee; }
+  line-height: 1.5; }
+
+.background {
+  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
+  height: 850px; }
+
+.link {
+  text-decoration: none; }
+  .link_header {
+    color: white; }
+
+.section-top {
+  position: relative; }
+  .section-top__header {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header__logo {
+    font-size: 32px;
+    line-height: 1;
+    padding-right: 143px; }
+  .header__hire-us {
+    padding-left: 135px; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nav__item {
+  padding: 0 31.5px; }
+  .nav__item:first-child {
+    padding: 0 31.5px 0 0; }
+  .nav__item:last-child {
+    padding: 0 0 0 31.5px; }
 
 /*# sourceMappingURL=main.css.map */
