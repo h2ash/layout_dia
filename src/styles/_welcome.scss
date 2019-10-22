@@ -1,0 +1,8 @@
+.welcome {
+  width: 742px;
+  &__text {
+    font-weight: 600px;
+    font-size: 24px;
+    color: $complementary-color_blue;
+  }
+}

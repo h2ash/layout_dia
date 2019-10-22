@@ -1,0 +1,20 @@
+.heading {
+  &__cyan {
+    position: relative;
+    left: 37px;
+    color: $main-color;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -37px;
+      width: 24px;
+      height: 24px;
+      background: url("../images/before-heading.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

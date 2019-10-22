@@ -32,6 +32,8 @@ body {
     right: -64px;
     -webkit-transform: translate(50%, 50%) rotate(90deg);
             transform: translate(50%, 50%) rotate(90deg); }
+  .wrapper__welcome {
+    padding-top: 165px; }
 
 .background {
   background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
@@ -147,5 +149,29 @@ body {
     letter-spacing: 2px; }
     .social__li:nth-child(2) {
       margin: 0 84px; }
+
+.welcome {
+  width: 742px; }
+  .welcome__text {
+    font-weight: 600px;
+    font-size: 24px;
+    color: #253757; }
+
+.heading__cyan {
+  position: relative;
+  left: 37px;
+  color: #56CCF2;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .heading__cyan::before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/before-heading.png");
+    background-position: center;
+    background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
