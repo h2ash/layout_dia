@@ -1,8 +1,9 @@
 .slider {
+  position: relative;
+
   &__img {
-    position: relative;
-    max-width: 1146px;
-    max-height: 640px;
+    width: 1146px;
+    height: 640px;
     object-fit: cover;
     object-position: center;
   }
@@ -33,7 +34,6 @@
   }
 
   &__tagline {
-    display: block;
     position: absolute;
     bottom: 86px;
     left: 98px;

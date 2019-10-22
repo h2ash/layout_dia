@@ -1,19 +1,27 @@
 .wrapper {
   // position: relative; // Вова говорил, чтобы не вылетали из потока?
-  display: flex;
+  // display: flex;
   width: 1146px;
   margin: 0 auto;
 
   &__header {
     padding-top: 48px;
+    display: flex;
+    align-items: center;
   }
 
   &__intro {
-    justify-content: flex-start;
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   &__slider {
+    padding-top: 80px;
+  }
 
+  &__social {
+    position: absolute;
+    top: 50%;
+    right: -64px;
+    transform: translate(50%, 50%) rotate(90deg);
   }
 }
