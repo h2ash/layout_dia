@@ -1,8 +1,9 @@
 .section-slider {
-  position: absolute;
-  top: 528px;
-  left: 50%;
-  transform: translate(-50%);
+  position: relative;
+  // top: 528px;
+  top: 80px;
+  // left: 50%;
+  // transform: translate(-50%);
 
   &__social {
     position: absolute;
