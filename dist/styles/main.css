@@ -23,9 +23,8 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .wrapper__intro {
-    padding-top: 80px; }
-  .wrapper__slider {
-    padding-top: 80px; }
+    padding-top: 80px;
+    padding-bottom: 80px; }
   .wrapper__social {
     position: absolute;
     top: 50%;
@@ -33,7 +32,10 @@ body {
     -webkit-transform: translate(50%, 50%) rotate(90deg);
             transform: translate(50%, 50%) rotate(90deg); }
   .wrapper__welcome {
-    padding-top: 165px; }
+    padding-top: 165px;
+    padding-bottom: 160px; }
+  .wrapper__what-to-do {
+    text-align: center; }
 
 .background {
   background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
@@ -151,9 +153,10 @@ body {
       margin: 0 84px; }
 
 .welcome {
+  margin: 0 auto;
   width: 742px; }
   .welcome__text {
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 24px;
     color: #253757; }
 
@@ -173,5 +176,60 @@ body {
     background: url("../images/before-heading.png");
     background-position: center;
     background-repeat: no-repeat; }
+
+.body {
+  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
+  background-repeat: no-repeat;
+  height: 850px;
+  z-index: -1; }
+
+.what-we-do {
+  position: relative; }
+  .what-we-do__heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+    color: #253757;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .what-we-do__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 162px; }
+
+.card1 {
+  position: relative;
+  text-align: left;
+  width: 264px;
+  height: 382px; }
+  .card1__img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; }
+  .card1__heading {
+    font-size: 19.6px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #253757;
+    padding-top: 64px;
+    padding-bottom: 32px; }
+  .card1__text {
+    color: #334563; }
+  .card1:nth-child(2) {
+    padding: 0 128px; }
 
 /*# sourceMappingURL=main.css.map */

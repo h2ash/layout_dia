@@ -1,7 +1,8 @@
 .welcome {
+  margin: 0 auto;
   width: 742px;
   &__text {
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 24px;
     color: $complementary-color_blue;
   }

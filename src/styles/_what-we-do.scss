@@ -1,0 +1,18 @@
+.what-we-do {
+  position: relative;
+
+  &__heading {
+    @include heading-blue(48px, 900, 1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    padding-bottom: 162px;
+  }
+}

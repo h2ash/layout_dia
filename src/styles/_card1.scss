@@ -1,0 +1,30 @@
+.card1 {
+  position: relative;
+  text-align: left;
+  width: 264px;
+  height: 382px;
+
+  &__img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+
+  &__heading {
+    @include heading-blue(19.6px, 900, 1.4);
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  &__text {
+    color: #334563;
+  }
+
+  &:nth-child(2) {
+    padding: 0 128px;
+  }
+}

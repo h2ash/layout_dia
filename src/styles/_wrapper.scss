@@ -1,6 +1,5 @@
 .wrapper {
   // position: relative; // Вова говорил, чтобы не вылетали из потока?
-  // display: flex;
   width: 1146px;
   margin: 0 auto;
 
@@ -12,10 +11,7 @@
 
   &__intro {
     padding-top: 80px;
-  }
-
-  &__slider {
-    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   &__social {
@@ -27,5 +23,10 @@
 
   &__welcome {
     padding-top: 165px;
+    padding-bottom: 160px;
+  }
+
+  &__what-to-do {
+    text-align: center;
   }
 }
