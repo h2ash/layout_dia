@@ -3,4 +3,11 @@
   top: 528px;
   left: 50%;
   transform: translate(-50%);
+
+  &__social {
+    position: absolute;
+    top: 50%;
+    right: -64px;
+    transform: translate(50%, -50%) rotate(90deg);
+  }
 }

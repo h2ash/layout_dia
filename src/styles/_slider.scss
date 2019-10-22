@@ -1,8 +1,8 @@
 .slider {
   &__img {
     position: relative;
-    width: 1146px;
-    height: 640px;
+    max-width: 1146px;
+    max-height: 640px;
     object-fit: cover;
     object-position: center;
   }
@@ -20,7 +20,7 @@
     color: white;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $complementary-color;
+    background-color: $complementary-color_yellow;
     border-radius: 0 50px 50px 0;
 
     &_right {
@@ -33,6 +33,25 @@
   }
 
   &__tagline {
+    display: block;
+    position: absolute;
+    bottom: 86px;
+    left: 98px;
+    width: 264px;
+  }
 
+  &__heading {
+    font-size: 12.6px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $main-color;
+    letter-spacing: 2px;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 140%;
+    color: white;
   }
 }

@@ -1,0 +1,14 @@
+.section {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+  &__header {
+
+    margin-top: 48px;
+  }
+
+  &__intro {
+    margin-top: 80px;
+  }
+}

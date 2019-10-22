@@ -1,8 +1,8 @@
 .header {
   display: flex;
+  align-items: center;
   white-space: nowrap;
   font-weight: bold;
-  align-items: center;
 
   &__logo {
     font-size: 32px;
