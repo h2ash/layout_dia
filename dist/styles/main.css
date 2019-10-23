@@ -8,12 +8,21 @@ html, body, ul, li, button, input, textarea, h1, h2, h3, h4, h5, h6 {
   list-style: none; }
 
 body {
-  line-height: 1.5;
-  background: grey; }
+  line-height: 1.5; }
+
+.background {
+  background: linear-gradient(-65deg, #FCFCFD, #FCFCFD 25%, #56ccf2 25%, #56ccf2);
+  background-repeat: no-repeat;
+  background-color: #FCFCFD;
+  height: 850px;
+  z-index: -1; }
 
 .wrapper {
   width: 1146px;
   margin: 0 auto; }
+  .wrapper__background_full_white {
+    width: auto;
+    background-color: white; }
   .wrapper__header {
     padding-top: 48px;
     display: -webkit-box;
@@ -36,11 +45,6 @@ body {
     padding-bottom: 160px; }
   .wrapper__what-to-do {
     text-align: center; }
-
-.background {
-  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
-  height: 850px;
-  z-index: -1; }
 
 .link {
   text-decoration: none; }
@@ -176,12 +180,6 @@ body {
     background: url("../images/before-heading.png");
     background-position: center;
     background-repeat: no-repeat; }
-
-.body {
-  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
-  background-repeat: no-repeat;
-  height: 850px;
-  z-index: -1; }
 
 .what-we-do {
   position: relative; }

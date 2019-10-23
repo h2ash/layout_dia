@@ -1,5 +1,7 @@
 .background {
-  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
+  background: linear-gradient(-65deg, $background-light-grey, $background-light-grey 25%, #56ccf2 25%, #56ccf2);
+  background-repeat: no-repeat;
+  background-color: $background-light-grey;
   height: 850px;
   z-index: -1;
 }
