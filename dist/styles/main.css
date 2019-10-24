@@ -46,7 +46,6 @@ body {
   .wrapper__what-to-do {
     text-align: center; }
   .wrapper__process {
-    margin-top: 160px;
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 182px; }
@@ -236,7 +235,9 @@ body {
     padding: 0 128px; }
 
 .process {
-  width: 362px; }
+  margin-top: 160px;
+  width: 362px;
+  margin-bottom: 291px; }
   .process__subtitle {
     margin-top: 19px;
     font-size: 32px;
@@ -245,10 +246,10 @@ body {
     color: #253757; }
   .process__text {
     margin-top: 64px;
-    color: #334563;
-    margin-bottom: 291px; }
+    color: #334563; }
 
 .numbered-cards {
+  position: relative;
   display: grid;
   grid-template-columns: 256px 256px;
   grid-gap: 112px 42px; }
@@ -260,6 +261,16 @@ body {
     background-color: white;
     -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
             box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
+    .numbered-cards__card:nth-child(1) {
+      top: 336px; }
+    .numbered-cards__card:nth-child(3) {
+      top: 128px;
+      -webkit-transform: translate(0, 50%);
+              transform: translate(0, 50%); }
+    .numbered-cards__card:nth-child(2) {
+      top: 225px; }
+    .numbered-cards__card:nth-child(4) {
+      top: 128px; }
   .numbered-cards__circle {
     position: relative;
     top: 48px;
