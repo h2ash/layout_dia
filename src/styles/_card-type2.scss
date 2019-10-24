@@ -1,0 +1,84 @@
+.card-type2 {
+  position: relative;
+  width: 240px;
+  height: 256px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+
+  &:nth-child(1) {
+    top: 336px;
+  }
+
+  &:nth-child(3) {
+    top: 128px;
+    transform: translate(0, 50%);
+  }
+
+  &:nth-child(2) {
+    top: 225px;
+  }
+
+  &:nth-child(4) {
+    top: 128px;
+  }
+
+  &__circle {
+    position: relative;
+    top: 48px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    opacity: 0.1;
+    &_cyan {
+      background-color: $main-color;
+    }
+    &_yellow {
+      background-color: $complementary-color_yellow;
+    }
+    &_green {
+      background-color: $complementary-color_green;
+    }
+    &_red {
+      background-color: $complementary-color_red;
+    }
+
+  }
+
+  &__number {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &_cyan {
+      color: $main-color;
+    }
+    &_yellow {
+      color: $complementary-color_yellow;
+    }
+    &_green {
+      color: $complementary-color_green;
+    }
+    &_red {
+      color: $complementary-color_red;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 176px;
+    height: 80px;
+    font-size: 12.6px;
+    color: #253757;
+  }
+}

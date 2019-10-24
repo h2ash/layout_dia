@@ -253,25 +253,26 @@ body {
   display: grid;
   grid-template-columns: 256px 256px;
   grid-gap: 112px 42px; }
-  .numbered-cards__card {
-    position: relative;
-    width: 240px;
-    height: 256px;
-    text-align: center;
-    background-color: white;
-    -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
-            box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
-    .numbered-cards__card:nth-child(1) {
-      top: 336px; }
-    .numbered-cards__card:nth-child(3) {
-      top: 128px;
-      -webkit-transform: translate(0, 50%);
-              transform: translate(0, 50%); }
-    .numbered-cards__card:nth-child(2) {
-      top: 225px; }
-    .numbered-cards__card:nth-child(4) {
-      top: 128px; }
-  .numbered-cards__circle {
+
+.card-type2 {
+  position: relative;
+  width: 240px;
+  height: 256px;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+          box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
+  .card-type2:nth-child(1) {
+    top: 336px; }
+  .card-type2:nth-child(3) {
+    top: 128px;
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%); }
+  .card-type2:nth-child(2) {
+    top: 225px; }
+  .card-type2:nth-child(4) {
+    top: 128px; }
+  .card-type2__circle {
     position: relative;
     top: 48px;
     left: 50%;
@@ -281,15 +282,15 @@ body {
     height: 48px;
     border-radius: 50%;
     opacity: 0.1; }
-    .numbered-cards__circle_cyan {
+    .card-type2__circle_cyan {
       background-color: #56CCF2; }
-    .numbered-cards__circle_yellow {
+    .card-type2__circle_yellow {
       background-color: #FCC304; }
-    .numbered-cards__circle_green {
+    .card-type2__circle_green {
       background-color: #13D84E; }
-    .numbered-cards__circle_red {
+    .card-type2__circle_red {
       background-color: #F36565; }
-  .numbered-cards__number {
+  .card-type2__number {
     position: absolute;
     top: 64px;
     left: 50%;
@@ -300,15 +301,15 @@ body {
     line-height: 1.5;
     letter-spacing: 2px;
     text-transform: uppercase; }
-    .numbered-cards__number_cyan {
+    .card-type2__number_cyan {
       color: #56CCF2; }
-    .numbered-cards__number_yellow {
+    .card-type2__number_yellow {
       color: #FCC304; }
-    .numbered-cards__number_green {
+    .card-type2__number_green {
       color: #13D84E; }
-    .numbered-cards__number_red {
+    .card-type2__number_red {
       color: #F36565; }
-  .numbered-cards__text {
+  .card-type2__text {
     position: absolute;
     top: 128px;
     left: 50%;
