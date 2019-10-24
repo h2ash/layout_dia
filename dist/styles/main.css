@@ -45,6 +45,11 @@ body {
     padding-bottom: 160px; }
   .wrapper__what-to-do {
     text-align: center; }
+  .wrapper__process {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 182px; }
 
 .link {
   text-decoration: none; }
@@ -203,12 +208,12 @@ body {
     padding-top: 160px;
     padding-bottom: 162px; }
 
-.card1 {
+.card-type1 {
   position: relative;
   text-align: left;
   width: 264px;
   height: 382px; }
-  .card1__img {
+  .card-type1__img {
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
@@ -218,16 +223,93 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%; }
-  .card1__heading {
+  .card-type1__heading {
     font-size: 19.6px;
     font-weight: 900;
     line-height: 1.4;
     color: #253757;
     padding-top: 64px;
     padding-bottom: 32px; }
-  .card1__text {
+  .card-type1__text {
     color: #334563; }
-  .card1:nth-child(2) {
+  .card-type1:nth-child(2) {
     padding: 0 128px; }
+
+.process {
+  width: 362px; }
+  .process__subtitle {
+    margin-top: 19px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #253757; }
+  .process__text {
+    margin-top: 64px;
+    color: #334563;
+    margin-bottom: 291px; }
+
+.numbered-cards {
+  display: grid;
+  grid-template-columns: 256px 256px;
+  grid-gap: 112px 42px; }
+  .numbered-cards__card {
+    position: relative;
+    width: 240px;
+    height: 256px;
+    text-align: center;
+    background-color: white;
+    -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+            box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
+  .numbered-cards__circle {
+    position: relative;
+    top: 48px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    opacity: 0.1; }
+    .numbered-cards__circle_cyan {
+      background-color: #56CCF2; }
+    .numbered-cards__circle_yellow {
+      background-color: #FCC304; }
+    .numbered-cards__circle_green {
+      background-color: #13D84E; }
+    .numbered-cards__circle_red {
+      background-color: #F36565; }
+  .numbered-cards__number {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    .numbered-cards__number_cyan {
+      color: #56CCF2; }
+    .numbered-cards__number_yellow {
+      color: #FCC304; }
+    .numbered-cards__number_green {
+      color: #13D84E; }
+    .numbered-cards__number_red {
+      color: #F36565; }
+  .numbered-cards__text {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 176px;
+    height: 80px;
+    font-size: 12.6px;
+    color: #253757; }
+
+.features {
+  height: 975px;
+  background-color: #56CCF2; }
 
 /*# sourceMappingURL=main.css.map */

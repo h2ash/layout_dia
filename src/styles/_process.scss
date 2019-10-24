@@ -1,3 +1,14 @@
 .process {
-  
+  width: 362px;
+
+  &__subtitle {
+    margin-top: 19px;
+    @include heading-blue(32px, 900, 1.4);
+  }
+
+  &__text {
+    margin-top: 64px;
+    color: #334563;
+    margin-bottom: 291px;
+  }
 }

@@ -8,10 +8,6 @@
     background-color: white;
   }
 
-  &__background_no-full_white {
-    
-  }
-
   &__header {
     padding-top: 48px;
     display: flex;
@@ -41,5 +37,15 @@
 
   &__what-to-do {
     text-align: center;
+  }
+
+  &__process {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 182px;
+  }
+
+  &__features {
   }
 }
