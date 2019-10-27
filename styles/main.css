@@ -8,12 +8,21 @@ html, body, ul, li, button, input, textarea, h1, h2, h3, h4, h5, h6 {
   list-style: none; }
 
 body {
-  line-height: 1.5;
-  background: grey; }
+  line-height: 1.5; }
+
+.background {
+  background: linear-gradient(-65deg, #FCFCFD, #FCFCFD 25%, #56ccf2 25%, #56ccf2);
+  background-repeat: no-repeat;
+  background-color: #FCFCFD;
+  height: 850px;
+  z-index: -1; }
 
 .wrapper {
   width: 1146px;
   margin: 0 auto; }
+  .wrapper__background_full_white {
+    width: auto;
+    background-color: white; }
   .wrapper__header {
     padding-top: 48px;
     display: -webkit-box;
@@ -36,11 +45,12 @@ body {
     padding-bottom: 160px; }
   .wrapper__what-to-do {
     text-align: center; }
-
-.background {
-  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
-  height: 850px;
-  z-index: -1; }
+  .wrapper__process {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 182px; }
+  .wrapper__features {
+    height: 975px; }
 
 .link {
   text-decoration: none; }
@@ -160,28 +170,28 @@ body {
     font-size: 24px;
     color: #253757; }
 
-.heading__cyan {
+.heading__with-pseudo {
   position: relative;
   left: 37px;
   color: #56CCF2;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase; }
-  .heading__cyan::before {
+  .heading__with-pseudo::before {
     content: "";
     position: absolute;
     left: -37px;
     width: 24px;
     height: 24px;
-    background: url("../images/before-heading.png");
+    background: url("../images/before-heading_cyan.png");
     background-position: center;
     background-repeat: no-repeat; }
-
-.body {
-  background: linear-gradient(-65deg, #fcfcfc, #fcfcfc 25%, #56ccf2 25%, #56ccf2);
-  background-repeat: no-repeat;
-  height: 850px;
-  z-index: -1; }
+  .heading__with-pseudo_white {
+    color: white; }
+    .heading__with-pseudo_white::before {
+      background: url("../images/before-heading_white.png");
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .what-we-do {
   position: relative; }
@@ -205,12 +215,12 @@ body {
     padding-top: 160px;
     padding-bottom: 162px; }
 
-.card1 {
+.card-type1 {
   position: relative;
   text-align: left;
   width: 264px;
   height: 382px; }
-  .card1__img {
+  .card-type1__img {
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
@@ -220,16 +230,147 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%; }
-  .card1__heading {
+  .card-type1__heading {
     font-size: 19.6px;
     font-weight: 900;
     line-height: 1.4;
     color: #253757;
     padding-top: 64px;
     padding-bottom: 32px; }
-  .card1__text {
+  .card-type1__text {
     color: #334563; }
-  .card1:nth-child(2) {
+  .card-type1:nth-child(2) {
     padding: 0 128px; }
+
+.process {
+  margin-top: 160px;
+  width: 362px;
+  margin-bottom: 291px; }
+  .process__subtitle {
+    margin-top: 19px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #253757; }
+  .process__text {
+    margin-top: 64px;
+    color: #334563; }
+
+.numbered-cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: 256px 256px;
+  grid-gap: 112px 42px; }
+
+.card-type2 {
+  position: relative;
+  width: 240px;
+  height: 256px;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+          box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
+  .card-type2:nth-child(1) {
+    top: 336px; }
+  .card-type2:nth-child(3) {
+    top: 128px;
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%); }
+  .card-type2:nth-child(2) {
+    top: 225px; }
+  .card-type2:nth-child(4) {
+    top: 128px; }
+  .card-type2__circle {
+    position: relative;
+    top: 48px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    opacity: 0.1; }
+    .card-type2__circle_cyan {
+      background-color: #56CCF2; }
+    .card-type2__circle_yellow {
+      background-color: #FCC304; }
+    .card-type2__circle_green {
+      background-color: #13D84E; }
+    .card-type2__circle_red {
+      background-color: #F36565; }
+  .card-type2__number {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    .card-type2__number_cyan {
+      color: #56CCF2; }
+    .card-type2__number_yellow {
+      color: #FCC304; }
+    .card-type2__number_green {
+      color: #13D84E; }
+    .card-type2__number_red {
+      color: #F36565; }
+  .card-type2__text {
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 176px;
+    height: 80px;
+    font-size: 12.6px;
+    color: #253757; }
+
+.features {
+  position: relative;
+  z-index: -2;
+  background-color: #56CCF2; }
+  .features__background {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    z-index: -1;
+    height: 975px; }
+  .features__section {
+    width: 1146px;
+    padding-top: 198px;
+    margin-bottom: 160px; }
+  .features__subtitle {
+    width: 362px;
+    margin-top: 19px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #253757;
+    margin-bottom: 69px; }
+  .features__icon-text-block {
+    display: grid;
+    grid-template-columns: 64px 263px;
+    grid-column-gap: 32px; }
+    .features__icon-text-block:nth-child(4) {
+      margin-top: 64px;
+      margin-bottom: 64px; }
+  .features__circle-with-icon {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .features__circle-with-icon_speaker {
+      background-image: url("../images/announcement-speaker.png"); }
+    .features__circle-with-icon_calendar {
+      background-image: url("../images/calendar.png"); }
+    .features__circle-with-icon_sheet {
+      background-image: url("../images/sheet.png"); }
+  .features__text {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
