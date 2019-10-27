@@ -1,5 +1,4 @@
 .wrapper {
-  // position: relative; // Вова говорил, чтобы не вылетали из потока?
   width: 1146px;
   margin: 0 auto;
 
@@ -40,12 +39,12 @@
   }
 
   &__process {
-    // margin-top: 160px;
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 182px;
   }
 
   &__features {
+    height: 975px;
   }
 }

@@ -1,4 +1,63 @@
 .features {
-  height: 975px;
+  position: relative;
+  z-index: -2;
   background-color: $main-color;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    z-index: -1;
+    height: 975px;
+    // clip-path: polygon(10% 90%, 70% 90%, 100% 0, 40% 0);
+    // background-image: url('../images/people.jpg');
+  }
+
+  &__section {
+    width: 1146px;
+    padding-top: 198px;
+    margin-bottom: 160px;
+  }
+
+  &__subtitle {
+    width: 362px;
+    margin-top: 19px;
+    @include heading-blue(32px, 900, 1.4);
+    margin-bottom: 69px;
+  }
+
+  &__icon-text-block {
+    display: grid;
+    grid-template-columns: 64px 263px;
+    grid-column-gap: 32px;
+
+    &:nth-child(4) {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__circle-with-icon {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &_speaker {
+      background-image: url('../images/announcement-speaker.png');
+    }
+    &_calendar {
+      background-image: url('../images/calendar.png');
+    }
+    &_sheet {
+      background-image: url('../images/sheet.png');
+    }
+  }
+
+  &__text {
+    color: white;
+  }
+
 }

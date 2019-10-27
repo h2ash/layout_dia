@@ -1,5 +1,5 @@
 .heading {
-  &__cyan {
+  &__with-pseudo {
     position: relative;
     left: 37px;
     color: $main-color;
@@ -12,9 +12,18 @@
       left: -37px;
       width: 24px;
       height: 24px;
-      background: url("../images/before-heading.png");
+      background: url("../images/before-heading_cyan.png");
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    &_white {
+      color: white;
+      &::before {
+        background: url("../images/before-heading_white.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
   }
 }

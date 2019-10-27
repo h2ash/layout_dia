@@ -49,6 +49,8 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 182px; }
+  .wrapper__features {
+    height: 975px; }
 
 .link {
   text-decoration: none; }
@@ -168,22 +170,28 @@ body {
     font-size: 24px;
     color: #253757; }
 
-.heading__cyan {
+.heading__with-pseudo {
   position: relative;
   left: 37px;
   color: #56CCF2;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase; }
-  .heading__cyan::before {
+  .heading__with-pseudo::before {
     content: "";
     position: absolute;
     left: -37px;
     width: 24px;
     height: 24px;
-    background: url("../images/before-heading.png");
+    background: url("../images/before-heading_cyan.png");
     background-position: center;
     background-repeat: no-repeat; }
+  .heading__with-pseudo_white {
+    color: white; }
+    .heading__with-pseudo_white::before {
+      background: url("../images/before-heading_white.png");
+      background-position: center;
+      background-repeat: no-repeat; }
 
 .what-we-do {
   position: relative; }
@@ -321,7 +329,48 @@ body {
     color: #253757; }
 
 .features {
-  height: 975px;
+  position: relative;
+  z-index: -2;
   background-color: #56CCF2; }
+  .features__background {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    z-index: -1;
+    height: 975px; }
+  .features__section {
+    width: 1146px;
+    padding-top: 198px;
+    margin-bottom: 160px; }
+  .features__subtitle {
+    width: 362px;
+    margin-top: 19px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #253757;
+    margin-bottom: 69px; }
+  .features__icon-text-block {
+    display: grid;
+    grid-template-columns: 64px 263px;
+    grid-column-gap: 32px; }
+    .features__icon-text-block:nth-child(4) {
+      margin-top: 64px;
+      margin-bottom: 64px; }
+  .features__circle-with-icon {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .features__circle-with-icon_speaker {
+      background-image: url("../images/announcement-speaker.png"); }
+    .features__circle-with-icon_calendar {
+      background-image: url("../images/calendar.png"); }
+    .features__circle-with-icon_sheet {
+      background-image: url("../images/sheet.png"); }
+  .features__text {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
