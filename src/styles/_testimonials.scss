@@ -1,0 +1,14 @@
+.testimonials {
+  &__subtitle {
+    width: 362px;
+    @include heading-blue(32px, 900, 140%);
+    margin-top: 19px;
+    margin-bottom: 86px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+  }
+
+}

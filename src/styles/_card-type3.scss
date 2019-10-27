@@ -1,0 +1,74 @@
+.card-type3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 314px;
+  height: 464px;
+  box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
+  &:nth-child(2) {
+    margin: 0 78px;
+  }
+
+  &__background {
+    position: absolute;
+    top: 35px;
+    width: 64px;
+    height: 162px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), $main-color;
+    border-radius: 35px;
+    transform: rotate(30deg);
+    &_yellow {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), $complementary-color_yellow;
+    }
+    &_red {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), $complementary-color_red;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 95px;
+    object-fit: contain;
+  }
+
+  &__text {
+    width: 250px;
+    margin-top: 240px;
+    font-style: italic;
+  }
+
+  &__line {
+    width: 64px;
+    height: 2px;
+    background-color: $main-color;
+    margin-top: 31px;
+    &_yellow {
+      background-color: $complementary-color_yellow;
+    }
+    &_red {
+      background-color: $complementary-color_red;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 31px;
+  }
+
+  &__position {
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-top: 0;
+    &_yellow {
+      color: $complementary-color_yellow;
+    }
+    &_red {
+      color: $complementary-color_red;
+    }
+  }
+}
