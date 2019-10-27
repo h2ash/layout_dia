@@ -52,8 +52,9 @@ body {
   .wrapper__features {
     height: 975px; }
   .wrapper__testimonials {
-    padding-top: 165px;
-    padding-bottom: 65px; }
+    padding-top: 165px; }
+  .wrapper__test {
+    height: 200px; }
 
 .link {
   text-decoration: none; }
