@@ -11,3 +11,8 @@
   line-height: $_line-height;
   color: $complementary-color_blue;
 }
+
+@mixin background-polygon() {
+  width: 144px;
+  height: 56px;
+}
