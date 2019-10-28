@@ -61,10 +61,33 @@ body {
   height: 975px; }
 
 .wrapper_testimonials {
-  height: 688px; }
+  height: 688px;
+  position: relative;
+  top: 165px; }
 
-.wrapper_test {
-  height: 200px; }
+.wrapper_space-200 {
+  position: relative;
+  z-index: 1;
+  height: 200px;
+  background-color: #FCFCFD; }
+
+.wrapper_vision {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  width: 100%; }
+
+.wrapper_vision-background {
+  background: url("../images/background-polygons.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.wrapper_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .link {
   text-decoration: none; }
@@ -387,24 +410,24 @@ body {
   .features__text {
     color: white; }
 
-.testimonials {
+.testimonials__subtitle {
+  width: 362px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 140%;
+  color: #253757;
+  margin-top: 19px;
+  margin-bottom: 86px; }
+
+.testimonials__cards {
   position: relative;
-  top: 165px; }
-  .testimonials__subtitle {
-    width: 362px;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 140%;
-    color: #253757;
-    margin-top: 19px;
-    margin-bottom: 86px; }
-  .testimonials__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .card-type3 {
   position: relative;
@@ -422,7 +445,8 @@ body {
   width: 314px;
   height: 464px;
   -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
-          box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05); }
+          box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
+  background: white; }
   .card-type3:nth-child(2) {
     margin: 0 78px; }
   .card-type3__background {
@@ -473,5 +497,56 @@ body {
       color: #FCC304; }
     .card-type3__position_red {
       color: #F36565; }
+
+.send-us-a-message__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14.5px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #253757; }
+
+.send-us-a-message__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.vision {
+  position: relative; }
+  .vision__section {
+    text-align: center;
+    width: 754px; }
+  .vision__heading {
+    padding-bottom: 57px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+    color: #253757; }
+  .vision__text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #253757;
+    padding-bottom: 55px; }
+
+.button {
+  width: 226px;
+  height: 56px;
+  background: #2F80ED;
+  border-radius: 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
