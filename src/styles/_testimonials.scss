@@ -1,4 +1,6 @@
 .testimonials {
+  position: relative;
+  top: 165px;
   &__subtitle {
     width: 362px;
     @include heading-blue(32px, 900, 140%);
@@ -7,6 +9,7 @@
   }
 
   &__cards {
+
     display: flex;
     justify-content: center;
   }

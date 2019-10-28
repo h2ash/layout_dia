@@ -1,55 +1,61 @@
 .wrapper {
-  width: 1146px;
-  margin: 0 auto;
 
-  &__background_full_white {
+  &_align-center {
+    width: 1146px;
+    margin: 0 auto;
+  }
+
+  &_background_full_white {
     width: auto;
     background-color: white;
   }
 
-  &__header {
+  &_header {
     padding-top: 48px;
     display: flex;
     align-items: center;
   }
 
-  &__intro {
+  &_intro {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
-  &__slider {
+  &_slider {
 
   }
 
-  &__social {
+  &_social {
     position: absolute;
     top: 50%;
     right: -64px;
     transform: translate(50%, 50%) rotate(90deg);
   }
 
-  &__welcome {
+  &_welcome {
     padding-top: 165px;
     padding-bottom: 160px;
   }
 
-  &__what-to-do {
+  &_what-to-do {
     text-align: center;
   }
 
-  &__process {
+  &_process {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 182px;
   }
 
-  &__features {
+  &_features {
     height: 975px;
   }
 
-  &__testimonials {
-    padding-top: 165px;
-    padding-bottom: 65px;
+  &_testimonials {
+    height: 688px;
+  }
+
+  &_test {
+    height: 200px;
   }
 }
