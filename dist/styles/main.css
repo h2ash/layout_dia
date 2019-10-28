@@ -91,10 +91,20 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.wrapper_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .link {
   text-decoration: none; }
   .link_header {
     color: white; }
+  .link_footer {
+    color: black; }
   .link_social {
     color: #253757; }
 
@@ -606,5 +616,10 @@ body {
   color: white;
   letter-spacing: 1px;
   font-weight: bold; }
+
+.footer {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 83px; }
 
 /*# sourceMappingURL=main.css.map */
