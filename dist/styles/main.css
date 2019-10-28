@@ -65,8 +65,22 @@ body {
   position: relative;
   top: 165px; }
 
-.wrapper_test {
-  height: 200px; }
+.wrapper_space-200 {
+  height: 200px;
+  background-color: red; }
+
+.wrapper_vision {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  width: 100%; }
+
+.wrapper_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .link {
   text-decoration: none; }
@@ -473,5 +487,54 @@ body {
       color: #FCC304; }
     .card-type3__position_red {
       color: #F36565; }
+
+.send-us-a-message__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14.5px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #253757; }
+
+.send-us-a-message__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.vision__section {
+  text-align: center;
+  width: 754px; }
+
+.vision__heading {
+  padding-bottom: 57px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  color: #253757; }
+
+.vision__text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #253757;
+  padding-bottom: 55px; }
+
+.button {
+  width: 226px;
+  height: 56px;
+  background: #2F80ED;
+  border-radius: 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,12 @@
+.send-us-a-message {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    @include heading-blue(14.5px, bold, 1.5);
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+}
