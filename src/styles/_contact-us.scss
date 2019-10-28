@@ -1,3 +1,42 @@
 .contact-us {
-  
+
+  &__subtitle {
+    margin-top: 19px;
+    @include heading-blue(32px, 900, 1.4);
+    width: 362px;
+  }
+
+  &__appeal-block {
+    width: 259px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &:nth-child(3) {
+      padding: 43px 0 41px 0;
+    }
+    &:nth-child(4) {
+      padding: 0 0 54px 0;
+    }
+  }
+
+  &__appeal {
+    @include heading-blue(13px, 800, 1.5);
+  }
+
+  &__info {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.5;
+    color: $main-color;
+    text-decoration: none;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    &_middle-link {
+      margin: 0 48px;
+    }
+  }
 }

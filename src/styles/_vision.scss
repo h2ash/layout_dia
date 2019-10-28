@@ -1,5 +1,4 @@
 .vision {
-  position: relative;
   &__section {
     text-align: center;
     width: 754px;
@@ -14,8 +13,4 @@
     @include heading-blue(24px, 600, 1.5);
     padding-bottom: 55px;
   }
-
-  // &__background-polygon {
-  //
-  // }
 }
