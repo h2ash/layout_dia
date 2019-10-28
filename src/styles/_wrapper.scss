@@ -70,6 +70,12 @@
     // height: 568px;
   }
 
+  &_vision-background {
+    background: url('../images/background-polygons.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &_contact {
     display: flex;
     justify-content: space-between;

@@ -76,6 +76,11 @@ body {
   padding-bottom: 160px;
   width: 100%; }
 
+.wrapper_vision-background {
+  background: url("../images/background-polygons.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .wrapper_contact {
   display: -webkit-box;
   display: -ms-flexbox;
