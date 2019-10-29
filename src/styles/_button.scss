@@ -7,4 +7,20 @@
   color: white;
   letter-spacing: 1px;
   font-weight: bold;
+  transition: all $hover-duration;
+  &:hover {
+  color: #2F80ED;
+  background-color: white;
+  border: 1px solid #2F80ED;
+  }
+
+  &_white {
+    background-color: white;
+    color: $complementary-color_blue;
+    transition: all $hover-duration;
+    &:hover {
+      background-color: $complementary-color_blue;
+      color: white;
+    }
+  }
 }

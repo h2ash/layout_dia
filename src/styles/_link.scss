@@ -1,8 +1,25 @@
 .link {
   text-decoration: none;
 
-  &_header {
+  &_header, &_footer {
+    position: relative;
     color: white;
+    &::after {
+      opacity: 0;
+      position: absolute;
+      content: "";
+      width: calc(100% + 12px);
+      height: 4px;
+      bottom: -8px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $complementary-color_yellow;
+      border-radius: 4px;
+      transition: opacity $hover-duration;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
   }
 
   &_footer {
@@ -11,5 +28,9 @@
 
   &_social {
     color: $complementary-color_blue;
+    transition: color $hover-duration;
+    &:hover {
+      color: $main-color;
+    }
   }
 }
