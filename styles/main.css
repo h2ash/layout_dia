@@ -197,6 +197,8 @@ body {
     background-repeat: no-repeat;
     background-color: #FCC304;
     border-radius: 0 50px 50px 0; }
+    .slider__button:focus {
+      outline: none; }
     .slider__button:hover {
       background-color: #FDD95B; }
     .slider__button_right {
@@ -655,6 +657,8 @@ body {
   font-weight: bold;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
+  .button:focus {
+    outline: none; }
   .button:hover {
     color: #2F80ED;
     background-color: white;
