@@ -197,6 +197,8 @@ body {
     background-repeat: no-repeat;
     background-color: #FCC304;
     border-radius: 0 50px 50px 0; }
+    .slider__button:hover {
+      background-color: #FDD95B; }
     .slider__button_right {
       -webkit-transform: rotate(0deg) translate(-3px);
               transform: rotate(0deg) translate(-3px); }
@@ -339,17 +341,27 @@ body {
   text-align: center;
   background-color: white;
   -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
-          box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
+          box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
   .card-type2:nth-child(1) {
     top: 336px; }
+    .card-type2:nth-child(1):hover {
+      top: 326px; }
   .card-type2:nth-child(3) {
     top: 128px;
     -webkit-transform: translate(0, 50%);
             transform: translate(0, 50%); }
+    .card-type2:nth-child(3):hover {
+      top: 118px; }
   .card-type2:nth-child(2) {
     top: 225px; }
+    .card-type2:nth-child(2):hover {
+      top: 215px; }
   .card-type2:nth-child(4) {
     top: 128px; }
+    .card-type2:nth-child(4):hover {
+      top: 118px; }
   .card-type2__circle {
     position: relative;
     top: 48px;
@@ -559,7 +571,11 @@ body {
   font-size: 14.5px;
   color: #152032;
   background: #FCFCFD;
-  outline: none; }
+  outline: none;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s; }
+  .send-us-a-message__input:focus, .send-us-a-message__input:hover {
+    border-bottom: 1px solid #56CCF2; }
   .send-us-a-message__input::-webkit-input-placeholder {
     color: inherit; }
   .send-us-a-message__input::-moz-placeholder {

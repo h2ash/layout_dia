@@ -24,6 +24,10 @@
     color: #152032;
     background: $background-light-grey;
     outline: none;
+    transition: border-bottom $hover-duration;
+    &:focus, &:hover {
+      border-bottom: 1px solid $main-color;
+    }
     &::placeholder {
       color: inherit;
     }

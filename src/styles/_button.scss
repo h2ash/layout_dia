@@ -1,7 +1,7 @@
 .button {
   width: 226px;
   height: 56px;
-  background: #2F80ED;
+  background: $complementary-color_royal-blue;
   border-radius: 64px;
   box-sizing: border-box;
   color: white;
@@ -9,9 +9,9 @@
   font-weight: bold;
   transition: all $hover-duration;
   &:hover {
-  color: #2F80ED;
+  color: $complementary-color_royal-blue;
   background-color: white;
-  border: 1px solid #2F80ED;
+  border: 1px solid $complementary-color_royal-blue;
   }
 
   &_white {

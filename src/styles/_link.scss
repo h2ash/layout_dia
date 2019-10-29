@@ -38,7 +38,7 @@
     color: $main-color;
     transition: color $hover-duration;
     &:hover {
-      color: #2F80ED;
+      color: $complementary-color_royal-blue;
     }
   }
 }

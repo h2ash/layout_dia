@@ -5,22 +5,35 @@
   text-align: center;
   background-color: white;
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+  transition: all $hover-duration;
 
   &:nth-child(1) {
     top: 336px;
+    &:hover {
+      top: 326px;
+    }
   }
 
   &:nth-child(3) {
     top: 128px;
     transform: translate(0, 50%);
+    &:hover {
+      top: 118px;
+    }
   }
 
   &:nth-child(2) {
     top: 225px;
+    &:hover {
+      top: 215px;
+    }
   }
 
   &:nth-child(4) {
     top: 128px;
+    &:hover {
+      top: 118px;
+    }
   }
 
   &__circle {
