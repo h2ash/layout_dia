@@ -1,0 +1,18 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 0 31.5px;
+
+    &:first-child {
+      padding: 0 31.5px 0 0;
+    }
+
+    &:last-child {
+      padding: 0 0 0 31.5px;
+    }
+  }
+}

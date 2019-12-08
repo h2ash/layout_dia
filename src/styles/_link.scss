@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  &_header {
+    color: white;
+  }
+
+  &_social {
+    color: $complementary-color_blue;
+  }
+}

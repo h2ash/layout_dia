@@ -1,0 +1,14 @@
+.header {
+  white-space: nowrap;
+  font-weight: bold;
+
+  &__logo {
+    font-size: 32px;
+    line-height: 1;
+    padding-right: 143px;
+  }
+
+  &__hire-us {
+    padding-left: 135px;
+  }
+}

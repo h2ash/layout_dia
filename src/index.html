@@ -5,10 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,700,800,900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="body">
+    <!-- <div class="background"></div> -->
+    <div class="wrapper">
+      <header class="header wrapper__header">
+        <div class="header__logo"><a href="#" class="link link_header">Dia</a></div>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="link link_header">Home</a></li>
+            <li class="nav__item"><a href="#" class="link link_header">About us</a></li>
+            <li class="nav__item"><a href="#" class="link link_header">Services</a></li>
+            <li class="nav__item"><a href="#" class="link link_header">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__hire-us link link_header">Hire us</a>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <section class="wrapper__intro intro">
+        <h1 class="intro__heading ">Global digital agency</h1>
+        <div class="intro__text">
+          By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath.
+        </div>
+        <button class="intro__button" type="button" name="button">Learn more</button>
+      </section>
+    </div>
+
+    <div class="wrapper wrapper__slider slider">
+      <img  class="slider__img" src="../images/people_1.jpg" alt="people at work">
+      <div class="slider__buttons">
+        <button class="slider__button slider__button_left"  oninvalid=""type="button" name="button"></button>
+        <button class="slider__button slider__button_right" type="button" name="button"></button>
+      </div>
+      <section class="slider__tagline">
+        <h3 class="slider__heading">Intro</h3>
+        <div class="slider__text">By the same illusion which lifts the horizon</div>
+      </section>
+      <ul class="wrapper__social social">
+        <li class="social__li"><a class="link link_social" href="#">Facebook</a></li>
+        <li class="social__li"><a class="link link_social" href="#">Twitter</a></li>
+        <li class="social__li"><a class="link link_social" href="#">Instagram</a></li>
+      </ul>
+    </div>
+
+    <section class="wrapper wrapper__welcome welcome">
+      <h2 class="heading__cyan">Welcome</h2>
+      <div class="welcome__text">
+        By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver.
+      </div>
+    </section>
   </body>
 </html>
